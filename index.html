@@ -6,7 +6,9 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+       
+        <link href="main.css" rel="stylesheet">
         <style>
             h1 {
                 font-family: "Roboto Condensed";
@@ -14,69 +16,94 @@
             body {
                 font-family: "Roboto";
             } 
-            #menu {
-                color: #972B14;
-            }
         </style>
     </head>
     <body>
-        <h1>Danielle Kirsten T. Sison</h1>
-        <p  style="font-size:130%">Vice President For Community at Developh, Founder of Developer Student Club Taft</p>
-        <p>I'm a student who likes to code and do org stuff during my free time.<p>
-        <p>
-            <a href="https://github.com/Skentir">Github</a>
-            <a href="https://www.linkedin.com/in/skentir/">LinkedIn</a>
-        </p>
-        <h2> Table of Contents</h2>
-        <ol id="menu">
-            <li><a href="#educ">Education</a></li>
-            <li><a href="#fave">Interests</a></li>
-            <li><a href="#vid">Favorite Video</a></li>
-            <li><a href="#audio">Favorite Audio</a></li>
-            <li><a href="academic.html">Academic Life</a></li>
-        </ol><hr>
+        <div class="container">
+            <div class="topnav">
+                <div class="navbar">
+                    <div class="nav-logo">
+                        <a href="index.html">
+                            <img src="https://img.icons8.com/ios/25/000000/sugar-cubes.png">
+                        </a>
+                    </div>
+    
+                    <div class="nav-items">
+                        <ul id="menu">
+                            <li><a href="#educ">Education</a></li>
+                            <li><a href="#fave">Interests</a></li>
+                            <li><a href="#proj">Projects</a></li>
+                            <li><a href="#audio">Music</a></li>
+                            <li><a href="academic.html">Schedule</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-        <h3 id="educ"> Education </h3>
-        <div class="row">
-            <div class="sm-7">
-                <table class="table">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th>Year</th>
-                        <th>School</th>
-                        <th>Degree</th>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <td>2018-2019</td>
-                        <td>De La Salle University Manila</td>
-                        <td>BS Computer Science - Software Technology </td>
-                    </tr>
-                    <tr>
-                        <td>2016-2018</td>
-                        <td>University of Santo Tomas Manila</td>
-                        <td>Science, Technology, Engineering, and Mathematics</td>
-                    </tr>
-                </table><hr>
+            <div class="box" id="aboutme">
+                <h1> Kirsten T. Sison</h1>
+                <div id="selfie">
+                    <img src="selfie.png" width="400px" height="400px">
+                </div>
+                <p  style="font-size:130%">Vice President For Community at Developh, Founder of Developer Student Club Taft</p>
+                <p>I'm a student who likes to code and do org stuff during my free time.<div>
+                <p>
+                    <a href="https://github.com/Skentir">Github</a>
+                    <a href="https://www.linkedin.com/in/skentir/">LinkedIn</a>
+                </p>
+            </div>
+      
+            <div class="box">
+                <h3 id="educ"> Education </h3>
+                <div class="row">
+                    <div class="sm-7">
+                        <table class="table">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th>Year</th>
+                                <th>School</th>
+                                <th>Degree</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td>2018-2019</td>
+                                <td>De La Salle University Manila</td>
+                                <td>BS Computer Science - Software Technology </td>
+                            </tr>
+                            <tr>
+                                <td>2016-2018</td>
+                                <td>University of Santo Tomas Manila</td>
+                                <td>Science, Technology, Engineering, and Mathematics</td>
+                            </tr>
+                        </table><hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3 id="fave"> Favorite Stuff </h3>
+                <ul>
+                    <li>Elon Musk</li>
+                    <li>Kittens and Cat Memes</li>
+                    <li>UX Design</li>
+                    <li>Women Who Code Community</li>
+                    <li>Vintage Films from the 30s to 60s</li>
+                    <li>Gone With The Wind</li>
+                </ul><hr>
+        
+            </div>
+       
+            <div class="box">
+                <h3 id="vid">Favorite Video</h3>
+                <iframe src="https://www.youtube.com/watch?v=lrhNPS4nbmQ"></iframe>        
+            </div>
+   
+            <div class="box">
+                <h3 id="audio">Favourite Audio</h3>
+                <audio>
+                    <source src=”https://open.spotify.com/track/6zHyWsqTzT6Fympdy9KQDQ” type=”audio/webm”/>
+                </audio>        
             </div>
         </div>
-
-        <h3 id="fave"> Favorite Stuff </h3>
-        <ul>
-            <li>Elon Musk</li>
-            <li>Kittens and Cat Memes</li>
-            <li>UX Design</li>
-            <li>Women Who Code Community</li>
-            <li>Vintage Films from the 30s to 60s</li>
-            <li>Gone With The Wind</li>
-        </ul><hr>
-
-        <h3 id="vid">Favorite Video</h3>
-        <iframe src="https://www.youtube.com/watch?v=lrhNPS4nbmQ"></iframe>
-        <h3 id="audio">Favourite Audio</h3>
-        <audio>
-            <source src=”https://open.spotify.com/track/6zHyWsqTzT6Fympdy9KQDQ” type=”audio/webm”/>
-        </audio>
-       
     </body>
 </html>
