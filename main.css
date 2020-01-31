@@ -47,7 +47,6 @@ div {
 
 
 .container {
-    padding-left:0px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +54,8 @@ div {
     width: 100%;
     background-color: tomato;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box {
@@ -71,7 +72,18 @@ div {
 
 .box#aboutme {
     padding-top: 41px;
+    width: 100%;
     background-color: thistle;
+}
+
+#video {
+    background-color: yellow;
+}
+#fave {
+    background-color: yellowgreen;
+}
+#educ {
+    background-color: wheat;
 }
 
 h1 {
