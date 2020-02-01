@@ -1,4 +1,19 @@
 
+#video {
+    background-color: yellow;
+}
+#fave {
+    background-color: yellowgreen;
+}
+#educ {
+    background-color: wheat;
+}
+
+h1 {
+    text-align: center;
+    color: #EB0144
+}
+
 .topnav {
    position: fixed;
    width: 100%;
@@ -17,6 +32,10 @@
     padding-left: 5px;
 }
 
+#menu {
+    padding:10px;
+}
+
 .nav-items {
     right: 0;
     position: fixed;
@@ -31,6 +50,10 @@
     border-left: 1px solid #B4B4B4;
 }
 
+.topnav a[href]:hover {
+    color:#EB0144;
+}
+
 .topnav li a{    
     color: black;
     text-decoration: none;
@@ -39,16 +62,16 @@
     font-family: 'Sulphur Point';
     font-size: 18px;
 }
-
-.topnav a[href]:hover {
-    color:#EB0144;
+@media all and (max-width: 725px) {
+    #ed {
+      font-family: 'Roboto';
+      padding: 15px;
+    }
 }
 
-#menu {
-    padding:10px;
-}
 .innerbox {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -69,7 +92,6 @@
     top: 0;
     left: 0;
     justify-content: center;
-    background-color: teal;
     align-content: center;
 }
 
@@ -85,6 +107,7 @@
     font-family: 'Sulphur Point';
     text-align: center;
 }
+
 .leftbox span {
     height: 80px;
 }
@@ -97,24 +120,12 @@ div.leftbox img{
     max-width: 50%;
     border-radius: 50%;
 }
-#video {
-    background-color: yellow;
-}
-#fave {
-    background-color: yellowgreen;
-}
-#educ {
-    background-color: wheat;
-}
 
-h1 {
-    text-align: center;
-    color: #EB0144
-}
-/* Media Queries */
-@media all and (max-width:981px) {
+@media all and (max-width: 981px) {
     .leftbox {
         margin: 0 auto;
         text-align:center;
+        flex-direction: row;
     }
 }
+
