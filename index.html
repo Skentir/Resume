@@ -4,11 +4,19 @@
     <head>
         <title>Resume</title>
         <meta name="viewport" content="width=device-width" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Sulphur+Point:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Sulphur+Point:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="css/main.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
+        <script language="JavaScript" type="text/javascript" src="scripts/jquery-3.4.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script language="JavaScript" type="text/javascript">
+            $(document).ready(function(){
+              $('.carousel').carousel({
+                interval: 4000
+              })
+            });    
+          </script>
     </head>
     <body>
         <nav class="topnav">
@@ -34,11 +42,11 @@
         <div class="container">
             <div class="box" id="aboutme">
                 <h1  class="subtitle" style="font-size: 36pt;padding-top: 20px;"> About Me</h1>
-                <div class="innerbox">
+                <div class="innerbox" align="center">
                         <div class="leftbox">
                             <img  id="selfie" src="assets/coder.png" width="200px" height="200px">  
-                            <p style="font-size:16pt;font-weight:lighter;color:#BE0136;padding: 0px 10px 0px 10px;">
-                                Hi! I'm Kirsten, a Computer Science student from Manila.
+                            <p style="font-size:16pt;font-weight:300;color:#EB0144;padding: 0px 10px 0px 10px;font-family:'Roboto';">
+                                Greetings, Hooman! I'm Kirsten, a Computer Science student from Manila.
                             </p>     
                             <div class="icons">
                                 <a href="https://github.com/Skentir" target="blank">
@@ -71,34 +79,92 @@
                                 I'm a student who likes to code and do org stuff during my free time.
                                 I'm a student who likes to code and do org stuff during my free time.
                                 I am addicted to mac & cheese but I'm lactose intolerant. I am addicted
-                                to mac & cheese but I'm lactose intolerant. 
-                            </p>     
+                                 to mac & cheese but I'm lactose intolerant. 
+                            </p> 
+                            <div class="row">
+                                <a href="assets/Kirsten_Resume.pdf" class="custombtn" onclick="ga('send', {
+                                    hitType: 'event',
+                                    eventCategory: 'CTA',
+                                    eventAction: 'download',
+                                  });">
+                                    Download Resume  
+                                </a>
+                            </div>
                         </div>
                 </div>
             </div>
-      
-            <div class="box display" style="background-color: white;">
+            <hr>
+            <div class="box display" id="educ">
                 <h3> Education </h3>
                 <div class="innerbox">
-                    <p class="title"> University of Santo Tomas</p>
-                    <div id="ust-slides" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-40"src="assets/vrph.jpeg" alt="VRPH Ambassador">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div id="ust-slides" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-40"src="assets/vrph.jpeg" width="340px" height="230px" alt="VR Exhibit in UST">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-40"src="assets/vrph2.jpg" width="340px" height="230px" alt="VRPH Ambassador">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-40"src="assets/tedxust.jpg" width="340px" height="230px" alt="TEDx Event">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-40"src="assets/healthhacks.jpg" width="340px" height="230px" alt="HealthHacks 2017">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                
+                        </div>
+                        <div class="col-md-7">
+                            <div class="description">
+                                <p class="slide-title">University of Santo Tomas</p>
+                                <p class="display">
+                                    I took the Science, Technology, Engineering, and Math strand in University of Santo Tomas. 
+                                    During my stay at the school, I participated in my first hackathon with my friends at 
+                                    Microsoft Philippines. I got accepted in the VR Ambassador program of VR Philippines as well wherein
+                                    I represent UST Senior High in partnered tech events and did some of my first speaking gigs and event
+                                    organization work.  
+                                </p>
                             </div>
-                            <div class="carousel-item active">
-                                
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div id="dlsu-slides" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-40"src="assets/dsc2.jpg" width="340px" height="230px" alt="DSC Summit">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-40"src="assets/dsc.jpg" width="340px" height="230px" alt="DSC Taft and ADMU">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-40"src="assets/spark.jpeg" width="340px" height="230px" alt="SPARK 2018">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-40"src="assets/hackercup.jpeg" width="340px" height="230px" alt="Hackercup 2018">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="description">
+                                <p class="slide-title">De La Salle University Manila</p>
+                                <p class="display">
+                                    I'm currently taking BS Computer Science with a specialization on Software Technology. 
+                                    I took part in some student organizations including our home org: La Salle Computer Society wherein
+                                    I met lots of new friends. I also helped organise some events there notably SPARK 2018 and CCS Week.
+                                    Currently I'm starting a new student org called Developer Student Clubs.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <hr>
             <div class="box display" id="fave">
-                <h3> Favorite Stuff </h3>
+                <h3> Interests </h3>
                 <ul>
                     <li>Elon Musk</li>
                     <li>Kittens and Cat Memes</li>
@@ -109,7 +175,7 @@
                 </ul><hr>
         
             </div>
-       
+            <hr>
             <div class="box" id="video">
                 <h3 id="vid">Favorite Video</h3>
                 <iframe src="https://www.youtube.com/watch?v=lrhNPS4nbmQ"></iframe>        

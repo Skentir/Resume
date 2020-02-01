@@ -1,11 +1,12 @@
+body {
+    background-color: #206D85;
+    /* #206D85, #37BFB8, #D252DE, #1B16A8, #0B287D*/
+}
 #video {
     background-color: yellow;
 }
 #fave {
     background-color: yellowgreen;
-}
-#educ {
-    background-color: wheat;
 }
 
 h1 {
@@ -24,6 +25,7 @@ h3 {
    position: fixed;
    width: 100%;
    height: 80px;
+   z-index: 9999;
 }
 .navbar {
     background-color: #F4F4F4;
@@ -60,7 +62,6 @@ h3 {
     color:#EB0144;
 }
 
-
 .topnav li a:not([id="#sched"]){    
     color: black;
     text-decoration: none;
@@ -83,54 +84,19 @@ h3 {
     font-family:'GTEestiDisplay-Regular',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
 }
 
-
-@media all and (max-width: 725px) {
-    .topnav li a[href="#educ"] {
-      display: none;
-    }
-    .topnav li:first-child {
-        border-left: none;
-    }
-}
-@media all and (max-width: 600px) {
-    .topnav li a[href="#fave"] {
-      display: none;
-      border-left: none;
-    }
-    .topnav li:nth-child(2) {
-        border-left: none;
-    }
-}
-@media all and (max-width: 490px) {
-    .topnav li a[href="#proj"] {
-      display: none;
-      border-left: none;
-    }
-    .topnav li:nth-child(3) {
-        border-left: none;
-    }
-}
-@media all and (max-width: 385px) {
-    .topnav li a[href="#audio"] {
-      display: none;
-      border-left: none;
-    }
-    .topnav li:nth-child(4) {
-        border-left: none;
-    }
-}
 .innerbox {
     display: flex;
     flex-wrap: wrap;
 }
 
 .container {
+    background-color: white;
     box-sizing: border-box;
     display: block;
     left: 0;
     max-width: 1000px;
     width: 100%;
-    background-color: tomato;
+    border-style: 5px solid #EB0144;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -162,6 +128,17 @@ h3 {
 .rightbox {
     width:500px;
     padding:10px;
+    text-align: left;
+}
+.custombtn {
+    color: white;
+    background-color: #EB0144;
+    max-width: 100%;
+    height: 70px;
+ 
+}
+.custombtn:hover {
+    text-decoration: none;
 }
 #selfie {
     margin: 0px 10px 10px 10px;
@@ -174,8 +151,30 @@ h3 {
     width: 140px;
     height: 24px;
 }
+
 .icons a:hover {
     text-decoration: none;
+}
+.innerbox .row {
+    justify-content: center;
+    align-content: center;
+    width: inherit;
+}
+.description {
+    position: relative;
+    max-width: 483px;
+    width: 100%;
+    padding:10px;
+}
+
+#ust-slides img, #dlsu-slides img {
+    max-width: 100%;
+    position: relative;
+}
+.slide-title {
+    font-size: 16pt;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 /* MEDIA QUERIES */
 @media all and (max-width: 981px) {
@@ -189,13 +188,58 @@ h3 {
         margin: 0 auto;
         text-align:center;
     }
-    .rightbox
+    #aboutme .rightbox
     {
         margin: 0 auto;
         text-align:center;
     }
 }
 
+@media all and (max-width: 725px) {
+    .topnav li a[href="#educ"] {
+      display: none;
+    }
+    .topnav li:first-child {
+        border-left: none;
+    }
+}
+@media all and (max-width:615px) {
+    #educ .description, #ust-slides img, #dlsu-slides img
+    {
+        margin: 0 auto;
+        text-align:center;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 607px) {
+    .topnav li a[href="#fave"] {
+      display: none;
+      border-left: none;
+    }
+    .topnav li:nth-child(2) {
+        border-left: none;
+    }
+}
+@media all and (max-width: 490px) {
+    .topnav li a[href="#proj"] {
+      display: none;
+      border-left: none;
+    }
+    .topnav li:nth-child(3) {
+        border-left: none;
+    }
+}
+
+@media all and (max-width: 385px) {
+    .topnav li a[href="#audio"] {
+      display: none;
+      border-left: none;
+    }
+    .topnav li:nth-child(4) {
+        border-left: none;
+    }
+}
 
 @font-face{
     font-family: 'Lack Line';
