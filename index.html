@@ -3,60 +3,64 @@
 <html>
     <head>
         <title>Resume</title>
+        <meta name="viewport" content="width=device-width" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Sulphur+Point&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
-       
-        <link href="main.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
         <style>
             h1 {
                 font-family: "Roboto Condensed";
             }
-            body {
-                font-family: "Roboto";
-            } 
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="topnav">
-                <div class="navbar">
-                    <div class="nav-logo">
-                        <a href="index.html">
-                            <img src="https://img.icons8.com/ios/25/000000/sugar-cubes.png">
-                        </a>
-                    </div>
-    
-                    <div class="nav-items">
-                        <ul id="menu">
-                            <li><a href="#educ">Education</a></li>
-                            <li><a href="#fave">Interests</a></li>
-                            <li><a href="#proj">Projects</a></li>
-                            <li><a href="#audio">Music</a></li>
-                            <li><a href="academic.html">Schedule</a></li>
-                        </ul>
-                    </div>
+        <nav class="topnav">
+            <div class="navbar">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="https://img.icons8.com/ios/25/000000/sugar-cubes.png">
+                    </a>
+                </div>
+
+                <div class="nav-items">
+                    <ul id="menu">
+                        <li><a id="ed" href="#educ">Education</a></li>
+                        <li><a class="navlink" href="#fave">Interests</a></li>
+                        <li><a class="navlink" href="#proj">Projects</a></li>
+                        <li><a class="navlink" href="#audio">Music</a></li>
+                        <li><a class="navlink" href="academic.html">Schedule</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
+        <div class="container">
             <div class="box" id="aboutme">
-                <h1> Kirsten T. Sison</h1>
-                    <div id="selfie">
-                        <img src="selfie.png" width="400px" height="400px">
-                    </div>
-                <p>
-                    I'm a student who likes to code and do org stuff during my free time.
-                    I'm a student who likes to code and do org stuff during my free time.
-                    I'm a student who likes to code and do org stuff during my free time.
-                    I'm a student who likes to code and do org stuff during my free time.
-                    I'm a student who likes to code and do org stuff during my free time.
-                    I'm a student who likes to code and do org stuff during my free time.
-                </p>
-                <p>
-                    <a href="https://github.com/Skentir">Github</a>
-                    <a href="https://www.linkedin.com/in/skentir/">LinkedIn</a>
-                </p>
+                <h1  class="subtitle" style="font-size: 36pt;font-family:'Sulphur Point';padding-top: 20px;"> About Me</h1>
+                <div class="innerbox">
+                        <div class="leftbox">
+                            <img src="assets/coder.png" width="200px" height="200px">  
+                            <span style="font-size:20pt;font-weight:lighter;color:#BE0136;">
+                                Hi! I'm Kirsten, a Computer Science student from Manila.
+                            </span>     
+                            <p>
+                                <a href="https://github.com/Skentir">Github</a>
+                                <a href="https://www.linkedin.com/in/skentir/">LinkedIn</a>
+                            </p> 
+                        </div>
+                        <div class="rightbox">
+                            <p>
+                                My name is Danielle Kirsten T. Sison and I'm a Computer Science sophomore at De La Salle University Manila.
+                                I'm a student who likes to code and do org stuff during my free time.
+                                I'm a student who likes to code and do org stuff during my free time.
+                                I'm a student who likes to code and do org stuff during my free time.
+                                I'm a student who likes to code and do org stuff during my free time.
+                                I'm a student who likes to code and do org stuff during my free time.
+                            </p>     
+                        </div>
+                </div>
             </div>
       
             <div class="box" id="educ">
