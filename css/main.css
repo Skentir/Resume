@@ -180,7 +180,10 @@ h3 {
     font-size: 16pt;
     font-weight: 400;
     margin-bottom: 10px;
-}
+} /*
+.animated.pulse {
+        animation-duration: infinite;
+} */
 /* MEDIA QUERIES */
 @media all and (max-width: 981px) {
 

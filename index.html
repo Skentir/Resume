@@ -8,15 +8,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="css/main.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <script language="JavaScript" type="text/javascript" src="scripts/jquery-3.4.1.js"></script>
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/bouncy.css" rel="stylesheet">
+        <script src="scripts/jquery-3.4.1.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script language="JavaScript" type="text/javascript">
-            $(document).ready(function(){
-              $('.carousel').carousel({
-                interval: 4000
-              })
-            });    
-          </script>
     </head>
     <body>
         <nav class="topnav">
@@ -188,5 +183,19 @@
                 </audio>        
             </div>
         </div>
+        <script language="JavaScript" type="text/javascript">
+            $(document).ready(function(){
+              $('.carousel').carousel({
+                interval: 4000
+              })
+            });
+
+            $('.custombtn').hover(function(e) {
+                $(this).addClass('animated pulse');
+            }, function(){
+                $(this).removeClass('animated pulse');
+            });
+        </script>
+
     </body>
 </html>
