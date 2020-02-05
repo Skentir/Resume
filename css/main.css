@@ -77,10 +77,6 @@ h3 {
     font-size: 16px;
 }
 
-.display {
-    font-family:'GTEestiDisplay-Regular',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
-}
-
 .innerbox {
     display: flex;
     flex-wrap: wrap;
@@ -184,6 +180,9 @@ h3 {
 #fave .row .col-sm-4 img {
     width: 200px;
     height: 200px;
+}
+#fave .innerbox{
+    justify-content: center;
 }
  /*
 .animated.pulse {
